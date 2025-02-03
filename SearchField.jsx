@@ -1,0 +1,17 @@
+// SearchField.jsx
+const SearchField = ({ searchQuery, handleSearchChange }) => {
+    return (
+      <div>
+        <h2>Search for a country</h2>
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={handleSearchChange}
+          placeholder="Enter country name"
+        />
+      </div>
+    );
+  };
+  
+  export default SearchField;
+  
