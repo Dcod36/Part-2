@@ -1,0 +1,30 @@
+/* Success Message (Green) */
+.success {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeOut 3s forwards; /* Fade out after 3 seconds */
+}
+
+/* Error Message (Red) */
+.error {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeOut 5s forwards; /* Fade out after 5 seconds */
+}
+
+/* Keyframe animation for fading out the message */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
