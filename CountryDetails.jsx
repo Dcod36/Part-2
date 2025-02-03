@@ -1,0 +1,14 @@
+const CountryDetails = ({ country }) => {
+    return (
+      <div>
+        <h3>{country.name.common}</h3>
+        <img src={country.flags.png} alt={`Flag of ${country.name.common}`} width="200" />
+        <p><strong>Capital:</strong> {country.capital}</p>
+        <p><strong>Area:</strong> {country.area} km²</p>
+        <p><strong>Languages:</strong> {Object.values(country.languages).join(', ')}</p>
+      </div>
+    );
+  };
+  
+  export default CountryDetails;
+  
